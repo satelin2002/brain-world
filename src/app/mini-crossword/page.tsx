@@ -267,12 +267,18 @@ export default function MiniCrosswordPage() {
                   <div className="space-y-2">
                     <p className="font-bold">Tips:</p>
                     <ul className="list-disc list-inside space-y-2">
-                      <li>Start with the clues you're most confident about</li>
+                      <li>
+                        Start with the clues you&apos;re most confident about
+                      </li>
                       <li>Use crossing letters to help solve other clues</li>
                       <li>
                         All letters must form valid words both across and down
                       </li>
                       <li>Click Reset for a new puzzle with different clues</li>
+                      <li>
+                        Don&apos;t worry if you get stuck - you can always
+                        reveal answers
+                      </li>
                     </ul>
                   </div>
                 </div>
