@@ -1,0 +1,84 @@
+{
+  "two_letters": [
+    {
+      "word": "AN",
+      "clues": ["Indefinite article", "Used before vowel sound", "One of many"]
+    },
+    {
+      "word": "OF",
+      "clues": ["Belonging to", "From", "Part of"]
+    },
+    {
+      "word": "HI",
+      "clues": ["Greeting", "Hello, informally", "Salutation"]
+    },
+    {
+      "word": "LO",
+      "clues": ["Behold!", "Look!", "See there!"]
+    },
+    {
+      "word": "AT",
+      "clues": ["Located in", "Position marker", "Where something is"]
+    },
+    {
+      "word": "BE",
+      "clues": ["To exist", "Present tense of am", "Verb of existence"]
+    },
+    {
+      "word": "BY",
+      "clues": ["Near to", "Through means of", "Beside"]
+    },
+    {
+      "word": "DO",
+      "clues": ["Perform action", "Musical note", "Accomplish"]
+    },
+    {
+      "word": "GO",
+      "clues": ["Move forward", "Travel", "Depart"]
+    },
+    {
+      "word": "IF",
+      "clues": ["On condition", "Supposing that", "Whether"]
+    },
+    {
+      "word": "IN",
+      "clues": ["Inside of", "Within", "Not out"]
+    },
+    {
+      "word": "IS",
+      "clues": ["Present tense be", "Exists now", "Current state"]
+    },
+    {
+      "word": "IT",
+      "clues": ["That thing", "Non-specific object", "Neutral pronoun"]
+    },
+    {
+      "word": "NO",
+      "clues": ["Negative response", "Opposite of yes", "Denial"]
+    },
+    {
+      "word": "ON",
+      "clues": ["Positioned above", "Activated", "Atop"]
+    },
+    {
+      "word": "OR",
+      "clues": ["Alternative choice", "Either this", "Otherwise"]
+    },
+    {
+      "word": "SO",
+      "clues": ["Therefore", "To such extent", "Consequently"]
+    },
+    {
+      "word": "TO",
+      "clues": ["Toward", "In direction of", "Until"]
+    },
+    {
+      "word": "UP",
+      "clues": ["Toward sky", "Higher position", "Elevated"]
+    },
+    {
+      "word": "WE",
+      "clues": ["Us together", "Plural self", "Group including speaker"]
+    }
+  ]
+}

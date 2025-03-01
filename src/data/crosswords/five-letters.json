@@ -1,0 +1,260 @@
+{
+  "five_letters": [
+    {
+      "word": "HAPPY",
+      "clues": ["Feeling joy", "Not sad", "Positive emotion"]
+    },
+    {
+      "word": "WATER",
+      "clues": ["H2O liquid", "Drink this", "Ocean substance"]
+    },
+    {
+      "word": "MUSIC",
+      "clues": ["Melodic sounds", "Songs to hear", "Audio art"]
+    },
+    {
+      "word": "PHONE",
+      "clues": [
+        "Communication device",
+        "Make calls with it",
+        "Mobile necessity"
+      ]
+    },
+    {
+      "word": "HOUSE",
+      "clues": ["Living space", "Home building", "Residential structure"]
+    },
+    {
+      "word": "LIGHT",
+      "clues": ["Brightness source", "Illumination", "Not dark"]
+    },
+    {
+      "word": "GREEN",
+      "clues": ["Forest color", "Plant shade", "Environmental hue"]
+    },
+    {
+      "word": "SMILE",
+      "clues": ["Happy expression", "Joyful look", "Upturned lips"]
+    },
+    {
+      "word": "EARTH",
+      "clues": ["Our planet", "Third from sun", "Blue marble"]
+    },
+    {
+      "word": "SPACE",
+      "clues": ["Cosmic void", "Astronaut's realm", "Star-filled expanse"]
+    },
+    {
+      "word": "ABOUT",
+      "clues": ["Concerning", "Regarding", "On the subject of"]
+    },
+    {
+      "word": "ABOVE",
+      "clues": ["Higher than", "Over the top", "Up from"]
+    },
+    {
+      "word": "ACTOR",
+      "clues": ["Stage performer", "Movie star", "Drama player"]
+    },
+    {
+      "word": "ADULT",
+      "clues": ["Grown person", "Over eighteen", "Mature individual"]
+    },
+    {
+      "word": "AFTER",
+      "clues": ["Following", "Later than", "Subsequent to"]
+    },
+    {
+      "word": "AGAIN",
+      "clues": ["Once more", "Another time", "Repeat action"]
+    },
+    {
+      "word": "ALARM",
+      "clues": ["Warning sound", "Wake-up call", "Alert signal"]
+    },
+    {
+      "word": "ALBUM",
+      "clues": ["Photo collection", "Music record", "Picture book"]
+    },
+    {
+      "word": "ALIEN",
+      "clues": ["Space visitor", "Foreign being", "ET type"]
+    },
+    {
+      "word": "ALIVE",
+      "clues": ["Living state", "Not dead", "Having life"]
+    },
+    {
+      "word": "ALLOW",
+      "clues": ["Permit action", "Give permission", "Let happen"]
+    },
+    {
+      "word": "ALONE",
+      "clues": ["By oneself", "Solitary state", "Without others"]
+    },
+    {
+      "word": "ALONG",
+      "clues": ["Beside path", "Following line", "Next to"]
+    },
+    {
+      "word": "ANGEL",
+      "clues": ["Heavenly being", "Divine messenger", "Winged figure"]
+    },
+    {
+      "word": "ANGER",
+      "clues": ["Hot emotion", "Rage feeling", "Mad state"]
+    },
+    {
+      "word": "ANGLE",
+      "clues": ["Corner measure", "Geometric turn", "Point view"]
+    },
+    {
+      "word": "APPLE",
+      "clues": ["Fruit from a tree", "iPhone maker", "Snow White's snack"]
+    },
+    {
+      "word": "APPLY",
+      "clues": ["Put to use", "Submit form", "Make request"]
+    },
+    {
+      "word": "APRIL",
+      "clues": ["Spring month", "Fourth month", "Rainy period"]
+    },
+    {
+      "word": "ARENA",
+      "clues": ["Sports venue", "Fighting space", "Concert hall"]
+    },
+    {
+      "word": "ARGUE",
+      "clues": ["Debate points", "Disagree with", "Make case"]
+    },
+    {
+      "word": "ARISE",
+      "clues": ["Get up", "Come about", "Stand upright"]
+    },
+    {
+      "word": "AUDIO",
+      "clues": ["Sound system", "Hearing part", "Music quality"]
+    },
+    {
+      "word": "AWARD",
+      "clues": ["Prize given", "Honor received", "Recognition token"]
+    },
+    {
+      "word": "BEACH",
+      "clues": ["Sandy shore", "Ocean edge", "Coastal area"]
+    },
+    {
+      "word": "CLOUD",
+      "clues": ["Sky floater", "Rain carrier", "Weather feature"]
+    },
+    {
+      "word": "DANCE",
+      "clues": ["Move to music", "Rhythmic motion", "Ballet action"]
+    },
+    {
+      "word": "EARTH",
+      "clues": ["Our planet", "Third rock from sun", "World we live in"]
+    },
+    {
+      "word": "FLAME",
+      "clues": ["Fire part", "Burning light", "Candle top"]
+    },
+    {
+      "word": "GRAPE",
+      "clues": ["Wine fruit", "Purple snack", "Vineyard product"]
+    },
+    {
+      "word": "HEART",
+      "clues": ["Blood pumper", "Love symbol", "Vital organ"]
+    },
+    {
+      "word": "IMAGE",
+      "clues": ["Picture form", "Visual copy", "Photo result"]
+    },
+    {
+      "word": "JUICE",
+      "clues": ["Fruit drink", "Liquid extract", "Squeezed beverage"]
+    },
+    {
+      "word": "KNIFE",
+      "clues": ["Cutting tool", "Sharp blade", "Kitchen utensil"]
+    },
+    {
+      "word": "LIGHT",
+      "clues": ["Brightness source", "Sun's gift", "Lamp's output"]
+    },
+    {
+      "word": "MONEY",
+      "clues": ["Cash amount", "Currency form", "Wealth measure"]
+    },
+    {
+      "word": "NIGHT",
+      "clues": ["Dark hours", "Evening time", "Day's end"]
+    },
+    {
+      "word": "OCEAN",
+      "clues": ["Large sea", "Water body", "Marine expanse"]
+    },
+    {
+      "word": "PEACE",
+      "clues": ["Calm state", "War absence", "Quiet time"]
+    },
+    {
+      "word": "QUEEN",
+      "clues": ["Female ruler", "Chess piece", "Royal lady"]
+    },
+    {
+      "word": "RIVER",
+      "clues": ["Flowing water", "Stream body", "Natural waterway"]
+    },
+    {
+      "word": "SLEEP",
+      "clues": ["Rest time", "Night activity", "Bed action"]
+    },
+    {
+      "word": "TABLE",
+      "clues": ["Furniture piece", "Dining surface", "Flat platform"]
+    },
+    {
+      "word": "UNDER",
+      "clues": ["Below place", "Lower position", "Beneath spot"]
+    },
+    {
+      "word": "VOICE",
+      "clues": ["Sound maker", "Speech sound", "Vocal output"]
+    },
+    {
+      "word": "WATER",
+      "clues": ["Liquid H2O", "Rain product", "Ocean substance"]
+    },
+    {
+      "word": "YOUTH",
+      "clues": ["Young age", "Early life", "Childhood time"]
+    },
+    {
+      "word": "ZEBRA",
+      "clues": ["Striped animal", "African horse", "Black and white creature"]
+    },
+    {
+      "word": "ALERT",
+      "clues": ["Warning sign", "Attention signal", "Notice message"]
+    },
+    {
+      "word": "BREAD",
+      "clues": ["Baked food", "Sandwich base", "Loaf product"]
+    },
+    {
+      "word": "CHAIR",
+      "clues": ["Sitting piece", "Furniture item", "Desk partner"]
+    },
+    {
+      "word": "DREAM",
+      "clues": ["Sleep vision", "Night thought", "Future hope"]
+    },
+    {
+      "word": "EAGLE",
+      "clues": ["Bird of prey", "National symbol", "High flyer"]
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "four_letters": [
+    {
+      "word": "BOOK",
+      "clues": ["Written stories", "Reading material", "Library item"]
+    },
+    {
+      "word": "GAME",
+      "clues": ["Play for fun", "Competition", "Entertainment activity"]
+    },
+    {
+      "word": "TIME",
+      "clues": ["Clock measure", "Hours pass by", "Temporal flow"]
+    },
+    {
+      "word": "LOVE",
+      "clues": ["Strong affection", "Deep feeling", "Heart's emotion"]
+    },
+    {
+      "word": "HOME",
+      "clues": ["Living space", "Where you dwell", "Family place"]
+    },
+    {
+      "word": "STAR",
+      "clues": ["Night sky twinkler", "Celestial light", "Astronomical object"]
+    },
+    {
+      "word": "BLUE",
+      "clues": ["Sky's color", "Ocean shade", "Cool hue"]
+    },
+    {
+      "word": "TREE",
+      "clues": ["Leafy plant", "Forest giant", "Wooden trunk"]
+    },
+    {
+      "word": "FISH",
+      "clues": ["Swims in water", "Aquatic animal", "Scales and fins"]
+    },
+    {
+      "word": "BIRD",
+      "clues": ["Flying friend", "Feathered creature", "Wing flapper"]
+    },
+    {
+      "word": "ABLE",
+      "clues": ["Capable of", "Having skill", "Can do"]
+    },
+    {
+      "word": "ACID",
+      "clues": ["Sour substance", "Low pH", "Corrosive liquid"]
+    },
+    {
+      "word": "AGED",
+      "clues": ["Grown old", "Matured", "Time-worn"]
+    },
+    {
+      "word": "ALLY",
+      "clues": ["Friendly nation", "Supporter", "Partner in cause"]
+    },
+    {
+      "word": "ARMY",
+      "clues": ["Military force", "Ground troops", "Fighting unit"]
+    },
+    {
+      "word": "BABY",
+      "clues": ["Newborn human", "Infant child", "Tiny person"]
+    },
+    {
+      "word": "BACK",
+      "clues": ["Rear part", "Spine area", "Return to start"]
+    },
+    {
+      "word": "BALL",
+      "clues": ["Spherical toy", "Round object", "Sports equipment"]
+    },
+    {
+      "word": "BAND",
+      "clues": ["Music group", "Ring shape", "Orchestra unit"]
+    },
+    {
+      "word": "BANK",
+      "clues": ["Money holder", "Financial institution", "River edge"]
+    },
+    {
+      "word": "BARE",
+      "clues": ["Uncovered", "Naked", "Without decoration"]
+    },
+    {
+      "word": "BARN",
+      "clues": ["Farm building", "Animal house", "Hay storage"]
+    },
+    {
+      "word": "BASE",
+      "clues": ["Bottom part", "Foundation", "Starting point"]
+    },
+    {
+      "word": "BATH",
+      "clues": ["Cleaning soak", "Tub time", "Washing spot"]
+    },
+    {
+      "word": "BEAM",
+      "clues": ["Light ray", "Support piece", "Radiant energy"]
+    },
+    {
+      "word": "BEAR",
+      "clues": ["Large mammal", "Forest creature", "Grizzly type"]
+    },
+    {
+      "word": "BEAT",
+      "clues": ["Rhythm pulse", "Defeat other", "Heart sound"]
+    },
+    {
+      "word": "BELL",
+      "clues": ["Ringing device", "Sound maker", "Door chime"]
+    },
+    {
+      "word": "BELT",
+      "clues": ["Waist band", "Strap holder", "Pants support"]
+    },
+    {
+      "word": "BEND",
+      "clues": ["Curve shape", "Not straight", "Flex point"]
+    },
+    {
+      "word": "BIKE",
+      "clues": ["Two-wheeler", "Pedal vehicle", "Cycling transport"]
+    },
+    {
+      "word": "BIND",
+      "clues": ["Tie together", "Fasten tight", "Secure firmly"]
+    },
+    {
+      "word": "BITE",
+      "clues": ["Teeth grip", "Mouth action", "Chewing motion"]
+    },
+    {
+      "word": "BLOW",
+      "clues": ["Wind force", "Strong gust", "Air movement"]
+    },
+    {
+      "word": "BOAT",
+      "clues": ["Water vessel", "Sailing craft", "Ocean transport"]
+    },
+    {
+      "word": "CARE",
+      "clues": ["Show concern", "Look after", "Tend to needs"]
+    },
+    {
+      "word": "DARK",
+      "clues": ["Without light", "Night time", "Opposite of bright"]
+    },
+    {
+      "word": "EASY",
+      "clues": ["Not difficult", "Simple task", "Effortless"]
+    },
+    {
+      "word": "FACE",
+      "clues": ["Front of head", "Expression holder", "Visual identity"]
+    },
+    {
+      "word": "GATE",
+      "clues": ["Entry point", "Garden door", "Fence opening"]
+    },
+    {
+      "word": "HAND",
+      "clues": ["Body part", "Five fingers", "Arm end"]
+    },
+    {
+      "word": "IDEA",
+      "clues": ["Thought concept", "Mental image", "Creative spark"]
+    },
+    {
+      "word": "JUMP",
+      "clues": ["Leap upward", "Spring action", "Hop high"]
+    },
+    {
+      "word": "KING",
+      "clues": ["Male ruler", "Crown wearer", "Chess piece"]
+    },
+    {
+      "word": "LAMP",
+      "clues": ["Light source", "Table fixture", "Room brightener"]
+    },
+    {
+      "word": "MAIL",
+      "clues": ["Postal items", "Letters sent", "Delivery service"]
+    },
+    {
+      "word": "NAME",
+      "clues": ["Personal title", "Identity word", "What you're called"]
+    },
+    {
+      "word": "OPEN",
+      "clues": ["Not closed", "Accessible", "Free to enter"]
+    },
+    {
+      "word": "PAGE",
+      "clues": ["Book sheet", "Paper leaf", "Written surface"]
+    },
+    {
+      "word": "QUIT",
+      "clues": ["Stop doing", "Give up", "Leave task"]
+    },
+    {
+      "word": "RAIN",
+      "clues": ["Water drops", "Sky shower", "Weather type"]
+    },
+    {
+      "word": "SAND",
+      "clues": ["Beach material", "Fine grains", "Desert ground"]
+    },
+    {
+      "word": "TALK",
+      "clues": ["Speak words", "Verbal exchange", "Voice thoughts"]
+    },
+    {
+      "word": "USER",
+      "clues": ["Account holder", "Program operator", "Service client"]
+    },
+    {
+      "word": "VIEW",
+      "clues": ["Scene sight", "Looking spot", "Visual range"]
+    },
+    {
+      "word": "WALK",
+      "clues": ["Step forward", "Foot travel", "Slow movement"]
+    },
+    {
+      "word": "YEAR",
+      "clues": ["Twelve months", "Calendar unit", "Time period"]
+    },
+    {
+      "word": "ZONE",
+      "clues": ["Area section", "Marked region", "Bounded space"]
+    },
+    {
+      "word": "ACID",
+      "clues": ["Sour taste", "Chemical type", "pH lower"]
+    },
+    {
+      "word": "ARMY",
+      "clues": ["Military force", "Soldier group", "Fighting unit"]
+    },
+    {
+      "word": "BABY",
+      "clues": ["Young child", "Infant human", "New person"]
+    },
+    {
+      "word": "BANK",
+      "clues": ["Money store", "Financial place", "Savings spot"]
+    },
+    {
+      "word": "BIRD",
+      "clues": ["Flying animal", "Feathered friend", "Wing creature"]
+    }
+  ]
+}

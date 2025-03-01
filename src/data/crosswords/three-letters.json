@@ -1,0 +1,1276 @@
+{
+  "three_letters": [
+    {
+      "word": "SUN",
+      "clues": ["Bright star", "Daylight source", "Warmth giver"]
+    },
+    {
+      "word": "MOON",
+      "clues": ["Night light", "Lunar body", "Earth's satellite"]
+    },
+    {
+      "word": "CAR",
+      "clues": ["Road vehicle", "Four wheels", "Travel machine"]
+    },
+    {
+      "word": "KEY",
+      "clues": ["Unlock door", "Access tool", "Important item"]
+    },
+    {
+      "word": "BOX",
+      "clues": ["Square container", "Storage unit", "Package shape"]
+    },
+    {
+      "word": "SEA",
+      "clues": ["Ocean water", "Vast blue", "Salty expanse"]
+    },
+    {
+      "word": "ICE",
+      "clues": ["Frozen water", "Cold and hard", "Skating surface"]
+    },
+    {
+      "word": "HOT",
+      "clues": ["High temperature", "Burning feeling", "Opposite of cold"]
+    },
+    {
+      "word": "COLD",
+      "clues": ["Low temperature", "Freezing feeling", "Opposite of hot"]
+    },
+    {
+      "word": "WET",
+      "clues": ["Covered in water", "Not dry", "Rainy weather"]
+    },
+    {
+      "word": "DRY",
+      "clues": ["Without water", "Not wet", "Desert climate"]
+    },
+    {
+      "word": "BIG",
+      "clues": ["Large size", "Great extent", "Opposite of small"]
+    },
+    {
+      "word": "SMALL",
+      "clues": ["Little size", "Minor extent", "Opposite of big"]
+    },
+    {
+      "word": "OLD",
+      "clues": ["Advanced in years", "Not new", "Antique item"]
+    },
+    {
+      "word": "NEW",
+      "clues": ["Recently made", "Not old", "Modern item"]
+    },
+    {
+      "word": "SAD",
+      "clues": ["Unhappy feeling", "Mournful mood", "Tears may fall"]
+    },
+    {
+      "word": "JOY",
+      "clues": ["Happy feeling", "Cheerful mood", "Smiling face"]
+    },
+    {
+      "word": "RED",
+      "clues": ["Color of blood", "Fire engine hue", "Rose petal shade"]
+    },
+    {
+      "word": "BLUE",
+      "clues": ["Color of sky", "Ocean shade", "Sapphire gem"]
+    },
+    {
+      "word": "TOP",
+      "clues": ["Highest point", "Summit location", "Upper part"]
+    },
+    {
+      "word": "BOT",
+      "clues": ["Lowest point", "Base location", "Under part"]
+    },
+    {
+      "word": "YES",
+      "clues": ["Affirmative answer", "Agreement word", "Positive reply"]
+    },
+    {
+      "word": "NO",
+      "clues": ["Negative answer", "Disagreement word", "Opposite of yes"]
+    },
+    {
+      "word": "EAT",
+      "clues": ["Consume food", "Take a meal", "Nourish body"]
+    },
+    {
+      "word": "SLEEP",
+      "clues": ["Rest body", "Close eyes", "Dream time"]
+    },
+    {
+      "word": "WALK",
+      "clues": ["Move on foot", "Pace slowly", "Slower than running"]
+    },
+    {
+      "word": "JUMP",
+      "clues": ["Leap upwards", "Spring into air", "Higher than standing"]
+    },
+    {
+      "word": "ANT",
+      "clues": ["Tiny insect", "Colony creature", "Picnic pest"]
+    },
+    {
+      "word": "BEE",
+      "clues": ["Honey maker", "Stinging insect", "Buzzing flyer"]
+    },
+    {
+      "word": "FLY",
+      "clues": ["Insect wings", "Airborne movement", "Bothersome pest"]
+    },
+    {
+      "word": "BAT",
+      "clues": ["Night flyer", "Cave dweller", "Sonar user"]
+    },
+    {
+      "word": "COW",
+      "clues": ["Farm animal", "Milk source", "Mooing sound"]
+    },
+    {
+      "word": "PIG",
+      "clues": ["Farm animal", "Oinking sound", "Mud lover"]
+    },
+    {
+      "word": "FOX",
+      "clues": ["Clever animal", "Red fur", "Wild canine"]
+    },
+    {
+      "word": "CAT",
+      "clues": ["Purring pet", "Feline friend", "Whiskers and paws"]
+    },
+    {
+      "word": "DOG",
+      "clues": ["Man's best friend", "Barking pet", "Loyal companion"]
+    },
+    {
+      "word": "ARM",
+      "clues": ["Body part", "Hand connector", "Reach and grasp"]
+    },
+    {
+      "word": "LEG",
+      "clues": ["Body part", "Foot connector", "Walk and stand"]
+    },
+    {
+      "word": "EYE",
+      "clues": ["See with it", "Vision organ", "Blinking part"]
+    },
+    {
+      "word": "EAR",
+      "clues": ["Hear with it", "Listening organ", "Sound receiver"]
+    },
+    {
+      "word": "NOSE",
+      "clues": ["Smell with it", "Scent organ", "Facial feature"]
+    },
+    {
+      "word": "LIP",
+      "clues": ["Mouth part", "Speak and kiss", "Smile display"]
+    },
+    {
+      "word": "TOE",
+      "clues": ["Foot part", "Wiggle fingers", "Sandal spot"]
+    },
+    {
+      "word": "FOG",
+      "clues": ["Thick mist", "Low cloud", "Visibility blocker"]
+    },
+    {
+      "word": "RAIN",
+      "clues": ["Water from sky", "Stormy weather", "Umbrella need"]
+    },
+    {
+      "word": "SNOW",
+      "clues": ["Frozen rain", "White flakes", "Winter weather"]
+    },
+    {
+      "word": "ICE",
+      "clues": ["Frozen water", "Cold and hard", "Skating surface"]
+    },
+    {
+      "word": "FIRE",
+      "clues": ["Burning heat", "Flame source", "Cook and warm"]
+    },
+    {
+      "word": "AIR",
+      "clues": ["Breathable gas", "Invisible wind", "Essential life"]
+    },
+    {
+      "word": "OIL",
+      "clues": ["Slippery liquid", "Engine fuel", "Cooking type"]
+    },
+    {
+      "word": "GAS",
+      "clues": ["Fuel type", "Invisible vapor", "Cook and heat"]
+    },
+    {
+      "word": "MAP",
+      "clues": ["Location guide", "Direction tool", "Travel aid"]
+    },
+    {
+      "word": "KEY",
+      "clues": ["Unlock door", "Access tool", "Important item"]
+    },
+    {
+      "word": "PEN",
+      "clues": ["Write with it", "Ink tool", "Sign document"]
+    },
+    {
+      "word": "CUP",
+      "clues": ["Drink from it", "Handle holder", "Coffee container"]
+    },
+    {
+      "word": "HAT",
+      "clues": ["Head wear", "Sun protection", "Fashion item"]
+    },
+    {
+      "word": "SHOE",
+      "clues": ["Foot wear", "Walk comfortably", "Pair item"]
+    },
+    {
+      "word": "BOX",
+      "clues": ["Square container", "Storage unit", "Package shape"]
+    },
+    {
+      "word": "BED",
+      "clues": ["Sleep on it", "Rest place", "Bedroom furniture"]
+    },
+    {
+      "word": "BUS",
+      "clues": ["Road transport", "Many seats", "Public vehicle"]
+    },
+    {
+      "word": "CAR",
+      "clues": ["Road vehicle", "Four wheels", "Travel machine"]
+    },
+    {
+      "word": "TAXI",
+      "clues": ["Hire vehicle", "Metered fare", "City transport"]
+    },
+    {
+      "word": "VAN",
+      "clues": ["Cargo vehicle", "Large back", "Delivery transport"]
+    },
+    {
+      "word": "ZIP",
+      "clues": ["Fasten clothes", "Toothed closure", "Bag closer"]
+    },
+    {
+      "word": "RUN",
+      "clues": ["Move quickly", "Sprint ahead", "Faster than walking"]
+    },
+    {
+      "word": "SIT",
+      "clues": ["Rest on chair", "Take a seat", "Opposite of stand"]
+    },
+    {
+      "word": "TOP",
+      "clues": ["Highest point", "Above all", "Peak position"]
+    },
+    {
+      "word": "TEA",
+      "clues": ["Hot drink", "Leaves infusion", "Afternoon beverage"]
+    },
+    {
+      "word": "JOB",
+      "clues": ["Work for pay", "Occupation role", "Career path"]
+    },
+    {
+      "word": "WAY",
+      "clues": ["Path to follow", "Direction to take", "Method to use"]
+    },
+    {
+      "word": "AGE",
+      "clues": ["Years lived", "Life span", "Time passed"]
+    },
+    {
+      "word": "ACT",
+      "clues": ["Perform a role", "Take action", "Stage performance"]
+    },
+    {
+      "word": "ADD",
+      "clues": ["Combine numbers", "Increase quantity", "Plus operation"]
+    },
+    {
+      "word": "AID",
+      "clues": ["Give help", "Provide assistance", "Support relief"]
+    },
+    {
+      "word": "AIM",
+      "clues": ["Set a goal", "Point towards", "Target intention"]
+    },
+    {
+      "word": "ALL",
+      "clues": ["Every one", "Total amount", "Without exception"]
+    },
+    {
+      "word": "AND",
+      "clues": ["Join words", "Connect phrases", "Conjunction used"]
+    },
+    {
+      "word": "ANY",
+      "clues": ["Some or none", "Unspecified amount", "Question word"]
+    },
+    {
+      "word": "APE",
+      "clues": ["Jungle animal", "Intelligent primate", "Banana lover"]
+    },
+    {
+      "word": "ARE",
+      "clues": ["Verb to be", "Plural form", "State of being"]
+    },
+    {
+      "word": "ART",
+      "clues": ["Creative skill", "Visual expression", "Museum display"]
+    },
+    {
+      "word": "ASK",
+      "clues": ["Pose a question", "Seek information", "Inquire query"]
+    },
+    {
+      "word": "BAD",
+      "clues": ["Not good", "Negative quality", "Unfavorable result"]
+    },
+    {
+      "word": "BAG",
+      "clues": ["Carry items", "Shopping container", "Luggage type"]
+    },
+    {
+      "word": "BAT",
+      "clues": ["Wooden stick", "Baseball equipment", "Cricket gear"]
+    },
+    {
+      "word": "BAY",
+      "clues": ["Coastal inlet", "Sea recess", "Harbor area"]
+    },
+    {
+      "word": "BEAR",
+      "clues": ["Large mammal", "Forest creature", "Hibernating animal"]
+    },
+    {
+      "word": "BED",
+      "clues": ["Sleep furniture", "Bedroom item", "Mattress place"]
+    },
+    {
+      "word": "BEE",
+      "clues": ["Honey insect", "Pollen carrier", "Hive dweller"]
+    },
+    {
+      "word": "BEG",
+      "clues": ["Ask earnestly", "Plead for favor", "Entreat request"]
+    },
+    {
+      "word": "BET",
+      "clues": ["Gamble money", "Wager stake", "Risk prediction"]
+    },
+    {
+      "word": "BIG",
+      "clues": ["Large size", "Great in scale", "Opposite of small"]
+    },
+    {
+      "word": "BIN",
+      "clues": ["Waste container", "Trash holder", "Recycling unit"]
+    },
+    {
+      "word": "BIT",
+      "clues": ["Small piece", "Tiny fragment", "Morsel particle"]
+    },
+    {
+      "word": "BOY",
+      "clues": ["Male child", "Young lad", "Son figure"]
+    },
+    {
+      "word": "BUN",
+      "clues": ["Bread roll", "Burger base", "Sweet pastry"]
+    },
+    {
+      "word": "CAB",
+      "clues": ["Taxi for hire", "City transport", "Metered vehicle"]
+    },
+    {
+      "word": "CAN",
+      "clues": ["Metal container", "Food preserver", "Beverage holder"]
+    },
+    {
+      "word": "CAP",
+      "clues": ["Head cover", "Hat type", "Baseball wear"]
+    },
+    {
+      "word": "CAR",
+      "clues": ["Road vehicle", "Four wheels drive", "Automobile travel"]
+    },
+    {
+      "word": "COW",
+      "clues": ["Farm animal", "Milk provider", "Cattle creature"]
+    },
+    {
+      "word": "CRY",
+      "clues": ["Shed tears", "Weep aloud", "Express sorrow"]
+    },
+    {
+      "word": "CUP",
+      "clues": ["Drinking vessel", "Handle mug", "Beverage container"]
+    },
+    {
+      "word": "DAY",
+      "clues": ["Light period", "24 hours cycle", "Sunlight duration"]
+    },
+    {
+      "word": "DEW",
+      "clues": ["Morning moisture", "Grass droplets", "Night condensation"]
+    },
+    {
+      "word": "DIG",
+      "clues": ["Excavate earth", "Tunnel ground", "Bury hole"]
+    },
+    {
+      "word": "DIP",
+      "clues": ["Immerse briefly", "Submerge quickly", "Lower into liquid"]
+    },
+    {
+      "word": "DOG",
+      "clues": ["Loyal pet", "Canine friend", "Barking animal"]
+    },
+    {
+      "word": "DRY",
+      "clues": ["Lacking moisture", "Not wet state", "Arid climate"]
+    },
+    {
+      "word": "DUE",
+      "clues": ["Expected time", "Scheduled arrival", "Owing payable"]
+    },
+    {
+      "word": "EAR",
+      "clues": ["Hearing organ", "Side of head", "Listening part"]
+    },
+    {
+      "word": "EAT",
+      "clues": ["Consume food", "Take a meal", "Ingest nourishment"]
+    },
+    {
+      "word": "EGG",
+      "clues": ["Oval food", "Chicken product", "Breakfast item"]
+    },
+    {
+      "word": "END",
+      "clues": ["Final part", "Termination point", "Conclusion finish"]
+    },
+    {
+      "word": "ERA",
+      "clues": ["Historical period", "Time epoch", "Age span"]
+    },
+    {
+      "word": "EYE",
+      "clues": ["Sight organ", "Vision sense", "Pupil iris"]
+    },
+    {
+      "word": "FAN",
+      "clues": ["Air cooler", "Breeze maker", "Electric blower"]
+    },
+    {
+      "word": "FAR",
+      "clues": ["Distant away", "Remote location", "Not nearby"]
+    },
+    {
+      "word": "FAT",
+      "clues": ["Greasy substance", "Body tissue", "Oily content"]
+    },
+    {
+      "word": "FAX",
+      "clues": ["Document sender", "Office machine", "Transmission device"]
+    },
+    {
+      "word": "FIG",
+      "clues": ["Sweet fruit", "Purple skin", "Mediterranean crop"]
+    },
+    {
+      "word": "FIN",
+      "clues": ["Fish appendage", "Swimming aid", "Aquatic feature"]
+    },
+    {
+      "word": "FIT",
+      "clues": ["Right size", "Suitable shape", "Healthy condition"]
+    },
+    {
+      "word": "FIX",
+      "clues": ["Repair mend", "Correct problem", "Secure fasten"]
+    },
+    {
+      "word": "FLY",
+      "clues": ["Air travel", "Winged motion", "Soar upwards"]
+    },
+    {
+      "word": "FOR",
+      "clues": ["Intended purpose", "Benefit of", "Reason why"]
+    },
+    {
+      "word": "FOX",
+      "clues": ["Cunning animal", "Red fur predator", "Wild canine"]
+    },
+    {
+      "word": "FUN",
+      "clues": ["Enjoyment pleasure", "Playful activity", "Amusement delight"]
+    },
+    {
+      "word": "GAP",
+      "clues": ["Empty space", "Break interval", "Opening divide"]
+    },
+    {
+      "word": "GAS",
+      "clues": ["Vapor fuel", "Invisible air", "Energy source"]
+    },
+    {
+      "word": "GET",
+      "clues": ["Receive obtain", "Acquire gain", "Fetch bring"]
+    },
+    {
+      "word": "GIG",
+      "clues": ["Musical performance", "Band concert", "Live show"]
+    },
+    {
+      "word": "GOD",
+      "clues": ["Supreme being", "Divine power", "Creator deity"]
+    },
+    {
+      "word": "GUM",
+      "clues": ["Chewing substance", "Sticky sweet", "Flavor base"]
+    },
+    {
+      "word": "GUN",
+      "clues": ["Firearm weapon", "Shooting tool", "Bullet launcher"]
+    },
+    {
+      "word": "GUT",
+      "clues": ["Intestine organ", "Digestive tract", "Belly inside"]
+    },
+    {
+      "word": "HAM",
+      "clues": ["Pork meat", "Cured pig", "Sandwich filling"]
+    },
+    {
+      "word": "HAS",
+      "clues": ["Possesses owns", "Third person verb", "To have form"]
+    },
+    {
+      "word": "HAT",
+      "clues": ["Head covering", "Sun protection wear", "Fashion accessory"]
+    },
+    {
+      "word": "HAY",
+      "clues": ["Dried grass", "Animal feed", "Farm fodder"]
+    },
+    {
+      "word": "HEN",
+      "clues": ["Female chicken", "Egg layer fowl", "Farm bird"]
+    },
+    {
+      "word": "HIM",
+      "clues": ["Male pronoun", "Objective case", "Referred person"]
+    },
+    {
+      "word": "HIP",
+      "clues": ["Joint of leg", "Pelvis area", "Body swivel"]
+    },
+    {
+      "word": "HIS",
+      "clues": ["Male possessive", "Belonging to him", "Pronoun adjective"]
+    },
+    {
+      "word": "HIT",
+      "clues": ["Strike impact", "Collide force", "Contact blow"]
+    },
+    {
+      "word": "HOG",
+      "clues": ["Farm pig", "Oinking animal", "Mud wallower"]
+    },
+    {
+      "word": "HOT",
+      "clues": ["High temperature", "Burning heat level", "Fiery warmth"]
+    },
+    {
+      "word": "HOW",
+      "clues": ["In what manner", "Question word", "Method inquiry"]
+    },
+    {
+      "word": "HUG",
+      "clues": ["Embrace warmly", "Affectionate hold", "Comforting squeeze"]
+    },
+    {
+      "word": "HUT",
+      "clues": ["Small dwelling", "Simple cabin", "Primitive shelter"]
+    },
+    {
+      "word": "ICE",
+      "clues": ["Frozen water state", "Solid cold", "Skating surface"]
+    },
+    {
+      "word": "ILL",
+      "clues": ["Not healthy", "Sick ailment", "Unwell condition"]
+    },
+    {
+      "word": "INK",
+      "clues": ["Writing fluid", "Pen substance", "Print colorant"]
+    },
+    {
+      "word": "INN",
+      "clues": ["Roadside lodging", "Traveler's rest", "Public house"]
+    },
+    {
+      "word": "ITS",
+      "clues": ["Possessive pronoun", "Belonging to it", "Neuter possessive"]
+    },
+    {
+      "word": "JAM",
+      "clues": ["Fruit preserve", "Sweet spread", "Breakfast topping"]
+    },
+    {
+      "word": "JAR",
+      "clues": ["Glass container", "Wide-mouth vessel", "Storage unit"]
+    },
+    {
+      "word": "JET",
+      "clues": ["Fast plane", "Air travel type", "Engine powered"]
+    },
+    {
+      "word": "JIG",
+      "clues": ["Lively dance", "Irish step", "Energetic rhythm"]
+    },
+    {
+      "word": "JOB",
+      "clues": ["Work employment", "Profession task", "Career role"]
+    },
+    {
+      "word": "JOG",
+      "clues": ["Slow run", "Gentle pace", "Exercise routine"]
+    },
+    {
+      "word": "JOT",
+      "clues": ["Write briefly", "Note quickly", "Record shortly"]
+    },
+    {
+      "word": "JUG",
+      "clues": ["Pitcher container", "Liquid holder", "Water vessel"]
+    },
+    {
+      "word": "JUM",
+      "clues": ["Add numbers", "Calculate total", "Mathematical operation"]
+    },
+    {
+      "word": "KEY",
+      "clues": ["Lock opener", "Access tool", "Important item to have"]
+    },
+    {
+      "word": "KID",
+      "clues": ["Young child", "Infant age", "Offspring youth"]
+    },
+    {
+      "word": "KIN",
+      "clues": ["Family relatives", "Blood relation", "Ancestry link"]
+    },
+    {
+      "word": "KIT",
+      "clues": ["Set of items", "Tool collection", "Supply pack"]
+    },
+    {
+      "word": "LAP",
+      "clues": ["Circuit round", "Track distance", "Race segment"]
+    },
+    {
+      "word": "LAW",
+      "clues": ["Legal rule", "Justice system", "Government decree"]
+    },
+    {
+      "word": "LEG",
+      "clues": ["Limb for walking", "Body support", "Foot connector part"]
+    },
+    {
+      "word": "LET",
+      "clues": ["Allow permit", "Give permission", "Authorize grant"]
+    },
+    {
+      "word": "LID",
+      "clues": ["Container cover", "Top closure", "Jar cap"]
+    },
+    {
+      "word": "LIT",
+      "clues": ["Illuminated bright", "Lighted up", "Powered on"]
+    },
+    {
+      "word": "LOG",
+      "clues": ["Tree trunk section", "Wood fuel", "Timber piece"]
+    },
+    {
+      "word": "LOT",
+      "clues": ["Large quantity", "Many items", "Abundant amount"]
+    },
+    {
+      "word": "LUG",
+      "clues": ["Carry heavily", "Tote with effort", "Drag burden"]
+    },
+    {
+      "word": "MAD",
+      "clues": ["Angry furious", "Insane crazy", "Upset enraged"]
+    },
+    {
+      "word": "MAN",
+      "clues": ["Adult male", "Human person", "Gender identity"]
+    },
+    {
+      "word": "MAP",
+      "clues": ["Direction guide", "Geography chart", "Location plan"]
+    },
+    {
+      "word": "MAY",
+      "clues": ["Possible chance", "Perhaps might", "Likely could"]
+    },
+    {
+      "word": "MEN",
+      "clues": ["Plural of man", "Adult males group", "Human beings"]
+    },
+    {
+      "word": "MET",
+      "clues": ["Past tense meet", "Encountered faced", "Found crossed"]
+    },
+    {
+      "word": "MIX",
+      "clues": ["Combine blend", "Stir together", "Merge ingredients"]
+    },
+    {
+      "word": "MOP",
+      "clues": ["Floor cleaner", "Wet sweeper", "Handle cloth"]
+    },
+    {
+      "word": "MUD",
+      "clues": ["Wet soil earth", "Soft ground", "Slushy dirt"]
+    },
+    {
+      "word": "MUG",
+      "clues": ["Coffee cup", "Handle vessel", "Drink container"]
+    },
+    {
+      "word": "NAP",
+      "clues": ["Short sleep rest", "Daytime doze", "Brief slumber"]
+    },
+    {
+      "word": "NET",
+      "clues": ["Mesh fabric", "Fish catcher", "Internet web"]
+    },
+    {
+      "word": "NEW",
+      "clues": ["Recently made", "Modern fresh", "Novel current"]
+    },
+    {
+      "word": "NIP",
+      "clues": ["Pinch gently", "Small bite", "Sharp tweak"]
+    },
+    {
+      "word": "NOD",
+      "clues": ["Head gesture", "Agreement sign", "Affirmative motion"]
+    },
+    {
+      "word": "NOT",
+      "clues": ["Negation word", "Opposite of yes", "Denial particle"]
+    },
+    {
+      "word": "NUN",
+      "clues": ["Religious sister", "Convent dweller", "Monastic woman"]
+    },
+    {
+      "word": "NUT",
+      "clues": ["Hard shell fruit", "Seed kernel", "Almond peanut"]
+    },
+    {
+      "word": "OAK",
+      "clues": ["Strong tree", "Acorn producer", "Hardwood source"]
+    },
+    {
+      "word": "OAR",
+      "clues": ["Rowing paddle", "Boat propeller", "Water pusher"]
+    },
+    {
+      "word": "OAT",
+      "clues": ["Grain cereal", "Breakfast food", "Porridge ingredient"]
+    },
+    {
+      "word": "ODD",
+      "clues": ["Strange unusual", "Peculiar weird", "Uneven number"]
+    },
+    {
+      "word": "OFF",
+      "clues": ["Opposite of on", "Switched state", "Deactivated state"]
+    },
+    {
+      "word": "OIL",
+      "clues": ["Slippery liquid", "Lubricant fluid", "Petroleum product"]
+    },
+    {
+      "word": "OLD",
+      "clues": ["Aged ancient", "Not young", "Vintage antique"]
+    },
+    {
+      "word": "ONE",
+      "clues": ["Single unit", "Number after zero", "Individual item"]
+    },
+    {
+      "word": "ORB",
+      "clues": ["Sphere globe", "Round object", "Celestial body"]
+    },
+    {
+      "word": "ORE",
+      "clues": ["Metal rock", "Mine mineral", "Raw material"]
+    },
+    {
+      "word": "OUR",
+      "clues": ["Possessive pronoun", "Belonging to us", "Group ownership"]
+    },
+    {
+      "word": "OUT",
+      "clues": ["Outside beyond", "Exterior direction", "Away from in"]
+    },
+    {
+      "word": "OWL",
+      "clues": ["Night bird", "Wise creature", "Hooting hunter"]
+    },
+    {
+      "word": "OWN",
+      "clues": ["Possess have", "Belong to", "Property claim"]
+    },
+    {
+      "word": "PAD",
+      "clues": ["Soft cushion", "Writing block", "Landing spot"]
+    },
+    {
+      "word": "PAN",
+      "clues": ["Cooking dish", "Frying vessel", "Kitchen utensil"]
+    },
+    {
+      "word": "PAT",
+      "clues": ["Gentle tap", "Soft touch", "Light stroke"]
+    },
+    {
+      "word": "PAW",
+      "clues": ["Animal foot", "Clawed appendage", "Pet foot"]
+    },
+    {
+      "word": "PAY",
+      "clues": ["Money reward", "Salary wages", "Compensation earnings"]
+    },
+    {
+      "word": "PEA",
+      "clues": ["Green vegetable", "Pod seed", "Round edible"]
+    },
+    {
+      "word": "PEG",
+      "clues": ["Wooden pin", "Clothes fastener", "Hanger support"]
+    },
+    {
+      "word": "PEN",
+      "clues": ["Writing tool", "Ink instrument", "Document signer"]
+    },
+    {
+      "word": "PET",
+      "clues": ["Domestic animal", "House creature", "Loved companion"]
+    },
+    {
+      "word": "PIE",
+      "clues": ["Baked dessert", "Fruit filling", "Crust pastry"]
+    },
+    {
+      "word": "PIG",
+      "clues": ["Farm swine", "Oinking mammal", "Bacon source"]
+    },
+    {
+      "word": "PIN",
+      "clues": ["Sharp fastener", "Needle point", "Brooch clasp"]
+    },
+    {
+      "word": "PIT",
+      "clues": ["Deep hole", "Mine shaft", "Fruit stone"]
+    },
+    {
+      "word": "POP",
+      "clues": ["Sudden burst", "Soda drink", "Inflate sound"]
+    },
+    {
+      "word": "POT",
+      "clues": ["Cooking container", "Plant holder", "Crockery vessel"]
+    },
+    {
+      "word": "PUB",
+      "clues": ["Bar tavern", "Drinking establishment", "Local inn"]
+    },
+    {
+      "word": "PUN",
+      "clues": ["Word joke", "Play on words", "Humorous twist"]
+    },
+    {
+      "word": "PUT",
+      "clues": ["Place set", "Position locate", "Lay deposit"]
+    },
+    {
+      "word": "QUI",
+      "clues": ["Quiet gentle", "Soft subdued", "Peaceful calm"]
+    },
+    {
+      "word": "RAT",
+      "clues": ["Rodent pest", "Sewer creature", "Cheese eater"]
+    },
+    {
+      "word": "RAW",
+      "clues": ["Uncooked food", "Unprocessed state", "Crude natural"]
+    },
+    {
+      "word": "RAY",
+      "clues": ["Light beam", "Sun streak", "Radiation wave"]
+    },
+    {
+      "word": "RED",
+      "clues": ["Color of fire", "Blood hue", "Crimson shade"]
+    },
+    {
+      "word": "RIB",
+      "clues": ["Chest bone", "Curved structure", "Meat cut"]
+    },
+    {
+      "word": "RIG",
+      "clues": ["Equipment set-up", "Machinery arrange", "Gear system"]
+    },
+    {
+      "word": "RIM",
+      "clues": ["Outer edge", "Circle border", "Wheel perimeter"]
+    },
+    {
+      "word": "RIP",
+      "clues": ["Tear apart", "Rend fabric", "Split open"]
+    },
+    {
+      "word": "ROB",
+      "clues": ["Steal from", "Take illegally", "Plunder loot"]
+    },
+    {
+      "word": "ROD",
+      "clues": ["Metal bar", "Thin stick", "Fishing pole"]
+    },
+    {
+      "word": "ROT",
+      "clues": ["Decay spoil", "Decompose ruin", "Degenerate fester"]
+    },
+    {
+      "word": "RUB",
+      "clues": ["Friction motion", "Massage action", "Polish shine"]
+    },
+    {
+      "word": "RUG",
+      "clues": ["Floor mat", "Carpet small", "Home textile"]
+    },
+    {
+      "word": "RUN",
+      "clues": ["Fast movement", "Sprint dash", "Race pace"]
+    },
+    {
+      "word": "RYE",
+      "clues": ["Grain type", "Bread flour", "Whiskey base"]
+    },
+    {
+      "word": "SAD",
+      "clues": ["Unhappy sorrowful", "Mournful glum", "Depressed dejected"]
+    },
+    {
+      "word": "SAG",
+      "clues": ["Droop downward", "Sink lower", "Bend curve"]
+    },
+    {
+      "word": "SAT",
+      "clues": ["Past tense sit", "Seated position", "Rested on chair"]
+    },
+    {
+      "word": "SAW",
+      "clues": ["Cutting tool", "Blade teeth", "Wood cutter"]
+    },
+    {
+      "word": "SAY",
+      "clues": ["Speak utter", "Voice words", "Express verbally"]
+    },
+    {
+      "word": "SEA",
+      "clues": ["Ocean expanse", "Saltwater body", "Vast blue water"]
+    },
+    {
+      "word": "SEE",
+      "clues": ["Vision perceive", "Sight behold", "Observe watch"]
+    },
+    {
+      "word": "SET",
+      "clues": ["Group collection", "Arrange order", "Fixed position"]
+    },
+    {
+      "word": "SEW",
+      "clues": ["Needle thread", "Stitch fabric", "Join seams"]
+    },
+    {
+      "word": "SHE",
+      "clues": ["Female pronoun", "Girl woman", "Referred person"]
+    },
+    {
+      "word": "SHY",
+      "clues": ["Timid bashful", "Reserved quiet", "Introverted coy"]
+    },
+    {
+      "word": "SIN",
+      "clues": ["Moral wrong", "Religious offense", "Transgression fault"]
+    },
+    {
+      "word": "SIP",
+      "clues": ["Small drink", "Slow swallow", "Taste lightly"]
+    },
+    {
+      "word": "SIR",
+      "clues": ["Respectful title", "Gentleman address", "Knight honorific"]
+    },
+    {
+      "word": "SKI",
+      "clues": ["Snow glide", "Winter sport", "Sloping boards"]
+    },
+    {
+      "word": "SKY",
+      "clues": ["Blue expanse", "Air above", "Clouds heaven"]
+    },
+    {
+      "word": "SLY",
+      "clues": ["Cunning sneaky", "Deceptive crafty", "Wily shrewd"]
+    },
+    {
+      "word": "SOB",
+      "clues": ["Weeping gasp", "Crying shudder", "Tearful convulsion"]
+    },
+    {
+      "word": "SOD",
+      "clues": ["Grass turf", "Lawn piece", "Earth surface"]
+    },
+    {
+      "word": "SON",
+      "clues": ["Male offspring", "Child boy", "Family lineage"]
+    },
+    {
+      "word": "SOW",
+      "clues": ["Plant seeds", "Scatter grain", "Cultivate crop"]
+    },
+    {
+      "word": "SPA",
+      "clues": ["Relaxing resort", "Wellness center", "Mineral bath"]
+    },
+    {
+      "word": "SPY",
+      "clues": ["Secret agent", "Covert observer", "Intelligence gatherer"]
+    },
+    {
+      "word": "SUE",
+      "clues": ["Legal action", "Court case", "Lawsuit initiate"]
+    },
+    {
+      "word": "SUM",
+      "clues": ["Total amount", "Addition result", "Aggregate number"]
+    },
+    {
+      "word": "TAB",
+      "clues": ["Small flap", "Account bill", "Drink coaster"]
+    },
+    {
+      "word": "TAN",
+      "clues": ["Sun skin color", "Brown shade", "Beach glow"]
+    },
+    {
+      "word": "TAP",
+      "clues": ["Knock lightly", "Faucet water", "Gentle strike"]
+    },
+    {
+      "word": "TAR",
+      "clues": ["Black sticky substance", "Road paving", "Asphalt material"]
+    },
+    {
+      "word": "TAX",
+      "clues": ["Government levy", "Income charge", "Revenue payment"]
+    },
+    {
+      "word": "TEA",
+      "clues": ["Hot beverage", "Leaf drink", "Caffeine infusion"]
+    },
+    {
+      "word": "TEE",
+      "clues": ["Golf peg", "Shirt type", "Letter shape"]
+    },
+    {
+      "word": "TEN",
+      "clues": ["Number after nine", "Decimal base", "Digit total"]
+    },
+    {
+      "word": "THE",
+      "clues": ["Definite article", "Specific noun", "Grammar word"]
+    },
+    {
+      "word": "THY",
+      "clues": ["Old possessive", "Your archaic", "Biblical pronoun"]
+    },
+    {
+      "word": "TIE",
+      "clues": ["Fasten knot", "Neck wear", "Shoe lace"]
+    },
+    {
+      "word": "TIN",
+      "clues": ["Metal element", "Can material", "Silver white"]
+    },
+    {
+      "word": "TIP",
+      "clues": ["Pointed end", "Gratuity money", "Advice suggestion"]
+    },
+    {
+      "word": "TOE",
+      "clues": ["Foot digit", "Sandal part", "Wiggle finger"]
+    },
+    {
+      "word": "TON",
+      "clues": ["Weight unit", "Heavy mass", "Thousand kilograms"]
+    },
+    {
+      "word": "TOO",
+      "clues": ["Excessive also", "Overly much", "In addition"]
+    },
+    {
+      "word": "TOP",
+      "clues": ["Highest point", "Summit apex", "Upper position"]
+    },
+    {
+      "word": "TOY",
+      "clues": ["Plaything object", "Child's item", "Game fun"]
+    },
+    {
+      "word": "TRY",
+      "clues": ["Attempt effort", "Give a go", "Seek succeed"]
+    },
+    {
+      "word": "TUB",
+      "clues": ["Bath container", "Washing basin", "Soaking vessel"]
+    },
+    {
+      "word": "TWO",
+      "clues": ["Number after one", "Pair duo", "Double couple"]
+    },
+    {
+      "word": "USE",
+      "clues": ["Employ utilize", "Apply practice", "Function purpose"]
+    },
+    {
+      "word": "VAN",
+      "clues": ["Cargo vehicle", "Delivery truck", "Panel transport"]
+    },
+    {
+      "word": "VAT",
+      "clues": ["Large container", "Liquid tank", "Brewing vessel"]
+    },
+    {
+      "word": "VET",
+      "clues": ["Animal doctor", "Pet healer", "Veterinarian medic"]
+    },
+    {
+      "word": "VIE",
+      "clues": ["Compete rival", "Contend struggle", "Strive oppose"]
+    },
+    {
+      "word": "VIP",
+      "clues": ["Important person", "Exclusive guest", "Special individual"]
+    },
+    {
+      "word": "WAR",
+      "clues": ["Armed conflict", "Combat battle", "Military strife"]
+    },
+    {
+      "word": "WAS",
+      "clues": ["Past tense be", "State of being", "Existed prior"]
+    },
+    {
+      "word": "WAY",
+      "clues": ["Path route", "Direction course", "Method manner"]
+    },
+    {
+      "word": "WEB",
+      "clues": ["Spider net", "Internet link", "Connected network"]
+    },
+    {
+      "word": "WED",
+      "clues": ["Marry unite", "Get hitched", "Tie knot"]
+    },
+    {
+      "word": "WET",
+      "clues": ["Moist damp", "Soaked liquid", "Watery condition"]
+    },
+    {
+      "word": "WHO",
+      "clues": ["Question pronoun", "Person identity", "Individual inquire"]
+    },
+    {
+      "word": "WHY",
+      "clues": ["Reason question", "Purpose inquire", "Explanation seek"]
+    },
+    {
+      "word": "WIN",
+      "clues": ["Victory triumph", "Gain succeed", "Achieve first"]
+    },
+    {
+      "word": "WIT",
+      "clues": ["Intelligence humor", "Clever funny", "Sharp mind"]
+    },
+    {
+      "word": "WON",
+      "clues": ["Past tense win", "Achieved victory", "Triumphed gained"]
+    },
+    {
+      "word": "WOW",
+      "clues": [
+        "Surprise exclamation",
+        "Astonishment expression",
+        "Amazement interjection"
+      ]
+    },
+    {
+      "word": "WRY",
+      "clues": ["Dry humor", "Sarcastic witty", "Mocking ironic"]
+    },
+    {
+      "word": "YAM",
+      "clues": ["Sweet potato", "Root vegetable", "Tuber crop"]
+    },
+    {
+      "word": "YAP",
+      "clues": ["Small dog bark", "Sharp sound", "Puppy noise"]
+    },
+    {
+      "word": "YAW",
+      "clues": ["Boat veer", "Plane drift", "Rudder turn"]
+    },
+    {
+      "word": "YEA",
+      "clues": ["Old yes", "Affirmative archaic", "Agreement bygone"]
+    },
+    {
+      "word": "YEN",
+      "clues": ["Japanese money", "Currency unit", "Asian cash"]
+    },
+    {
+      "word": "YET",
+      "clues": ["Still however", "Up to now", "Despite that"]
+    },
+    {
+      "word": "YOU",
+      "clues": ["Second person", "Addressed person", "Pronoun form"]
+    },
+    {
+      "word": "ZIP",
+      "clues": ["Fasten closure", "Bag zipper", "Speed action"]
+    },
+    {
+      "word": "ZOO",
+      "clues": ["Animal park", "Wildlife exhibit", "Cage display"]
+    }
+  ]
+}
