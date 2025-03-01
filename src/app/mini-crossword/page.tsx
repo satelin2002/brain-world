@@ -57,7 +57,11 @@ type Puzzle = {
 
 export default function MiniCrosswordPage() {
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
-  const [grid, setGrid] = useState<string[][]>([]);
+  const [grid, setGrid] = useState<string[][]>(() =>
+    Array(5)
+      .fill(null)
+      .map(() => Array(5).fill(""))
+  );
   const [hoveredClue, setHoveredClue] = useState<{
     type: "across" | "down";
     number: number;
@@ -114,10 +118,11 @@ export default function MiniCrosswordPage() {
     if (isBlackCell(row, col)) return;
 
     const newValue = value.toUpperCase().slice(-1); // Take only the last character
-    const newGrid = grid.map((r, i) =>
-      r.map((c, j) => (i === row && j === col ? newValue : c))
-    );
-    setGrid(newGrid);
+    const newGrid = [...grid.map((row) => [...row])];
+    if (newGrid[row] && newGrid[row][col] !== undefined) {
+      newGrid[row][col] = newValue;
+      setGrid(newGrid);
+    }
   };
 
   // Check if a cell should be highlighted
@@ -332,7 +337,7 @@ export default function MiniCrosswordPage() {
                                   <Input
                                     type="text"
                                     maxLength={1}
-                                    value={grid[row][col] || ""}
+                                    value={(grid[row] && grid[row][col]) || ""}
                                     onChange={(e) =>
                                       handleLetterChange(
                                         row,
