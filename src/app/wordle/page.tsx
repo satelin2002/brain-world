@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, Suspense } from "react";
 import words from "an-array-of-english-words";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -65,7 +65,7 @@ const KEYBOARD_ROWS = [
   ["ENTER", "Z", "X", "C", "V", "B", "N", "M", "←"],
 ];
 
-export default function WordlePage() {
+function WordleGame() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const modeParam = searchParams.get("mode");
@@ -388,6 +388,18 @@ export default function WordlePage() {
           </div>
         </div>
       </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default function WordlePage() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <Suspense fallback={<div>Loading...</div>}>
+        <WordleGame />
+      </Suspense>
       <Footer />
     </div>
   );
