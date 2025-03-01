@@ -138,28 +138,24 @@ class CrosswordGenerator {
         // For across words, check cells above and below
         if (currentRow > 0 && this.grid[currentRow - 1][currentCol] !== "") {
           // Allow intersection only if it forms a valid word
-          if (!this.isValidIntersection(word, i, row, col, isAcross))
-            return false;
+          if (!this.isValidIntersection()) return false;
         }
         if (
           currentRow < this.size - 1 &&
           this.grid[currentRow + 1][currentCol] !== ""
         ) {
-          if (!this.isValidIntersection(word, i, row, col, isAcross))
-            return false;
+          if (!this.isValidIntersection()) return false;
         }
       } else {
         // For down words, check cells to left and right
         if (currentCol > 0 && this.grid[currentRow][currentCol - 1] !== "") {
-          if (!this.isValidIntersection(word, i, row, col, isAcross))
-            return false;
+          if (!this.isValidIntersection()) return false;
         }
         if (
           currentCol < this.size - 1 &&
           this.grid[currentRow][currentCol + 1] !== ""
         ) {
-          if (!this.isValidIntersection(word, i, row, col, isAcross))
-            return false;
+          if (!this.isValidIntersection()) return false;
         }
       }
     }
@@ -176,13 +172,7 @@ class CrosswordGenerator {
     return hasIntersection;
   }
 
-  private isValidIntersection(
-    _word: string,
-    _pos: number,
-    _row: number,
-    _col: number,
-    _isAcross: boolean
-  ): boolean {
+  private isValidIntersection(): boolean {
     // This is a simplified check - we're just making sure we don't create invalid letter combinations
     return true;
   }

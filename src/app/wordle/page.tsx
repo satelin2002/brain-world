@@ -81,7 +81,6 @@ export default function WordlePage() {
   const [currentGuess, setCurrentGuess] = useState("");
   const [guesses, setGuesses] = useState<string[]>([]);
   const [gameOver, setGameOver] = useState(false);
-  const [message, setMessage] = useState("");
   const [usedLetters, setUsedLetters] = useState<{ [key: string]: string }>({});
 
   // Initialize game
@@ -96,7 +95,6 @@ export default function WordlePage() {
     setCurrentGuess("");
     setGuesses([]);
     setGameOver(false);
-    setMessage("");
     setUsedLetters({});
   };
 
@@ -126,10 +124,8 @@ export default function WordlePage() {
 
     if (currentGuess === targetWord) {
       setGameOver(true);
-      setMessage("Congratulations! You won! 🎉");
     } else if (newGuesses.length >= MAX_ATTEMPTS) {
       setGameOver(true);
-      setMessage(`Game Over! The word was ${targetWord}`);
     }
   }, [currentGuess, wordLengthOption.length, guesses, targetWord, usedLetters]);
 

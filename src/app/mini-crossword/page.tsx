@@ -62,9 +62,6 @@ export default function MiniCrosswordPage() {
     type: "across" | "down";
     number: number;
   } | null>(null);
-  const [revealedAnswers, setRevealedAnswers] = useState<Set<string>>(
-    new Set()
-  );
   const [checkDialogOpen, setCheckDialogOpen] = useState(false);
   const [checkResults, setCheckResults] = useState<{
     correct: boolean;
@@ -83,7 +80,6 @@ export default function MiniCrosswordPage() {
           .fill("")
           .map(() => Array(newPuzzle.gridSize).fill(""))
       );
-      setRevealedAnswers(new Set());
       setSelectedClue(null);
       setHoveredClue(null);
     } catch (error) {
@@ -173,12 +169,6 @@ export default function MiniCrosswordPage() {
     });
 
     setGrid(newGrid);
-    setRevealedAnswers(
-      new Set([
-        ...puzzle.clues.across.map((c) => `across-${c.number}`),
-        ...puzzle.clues.down.map((c) => `down-${c.number}`),
-      ])
-    );
   };
 
   // Check answers
@@ -456,7 +446,7 @@ export default function MiniCrosswordPage() {
         <DialogContent>
           <DialogHeader>
             <DialogTitle className="text-2xl font-black">
-              {checkResults.correct ? "Congratulations! 🎉" : "Keep Going!"}
+              Hey, that&apos;s cheating!
             </DialogTitle>
           </DialogHeader>
           <div className="py-4">
