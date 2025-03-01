@@ -123,7 +123,7 @@ export default function PatternRecallPage() {
   // Start new game
   useEffect(() => {
     initializeGame();
-  }, [level, gridSize]);
+  }, [level, gridSize, initializeGame]);
 
   return (
     <div className="min-h-screen flex flex-col">

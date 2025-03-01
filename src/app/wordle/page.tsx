@@ -19,7 +19,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import words from "an-array-of-english-words";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -109,33 +109,7 @@ export default function WordlePage() {
     setUsedLetters({});
   };
 
-  // Handle keyboard input
-  useEffect(() => {
-    const handleKeydown = (e: KeyboardEvent) => {
-      if (gameOver) return;
-      handleInput(e.key.toUpperCase());
-    };
-
-    window.addEventListener("keydown", handleKeydown);
-    return () => window.removeEventListener("keydown", handleKeydown);
-  }, [currentGuess, gameOver]);
-
-  const handleInput = (key: string) => {
-    if (gameOver) return;
-
-    if (key === "ENTER" && currentGuess.length === wordLengthOption.length) {
-      submitGuess();
-    } else if (key === "←" || key === "BACKSPACE") {
-      setCurrentGuess((prev) => prev.slice(0, -1));
-    } else if (
-      currentGuess.length < wordLengthOption.length &&
-      /^[A-Z]$/.test(key)
-    ) {
-      setCurrentGuess((prev) => (prev + key).toUpperCase());
-    }
-  };
-
-  const submitGuess = () => {
+  const submitGuess = useCallback(() => {
     if (currentGuess.length !== wordLengthOption.length) return;
 
     const newGuesses = [...guesses, currentGuess];
@@ -166,7 +140,36 @@ export default function WordlePage() {
       setGameOver(true);
       setMessage(`Game Over! The word was ${targetWord}`);
     }
-  };
+  }, [currentGuess, wordLengthOption.length, guesses, targetWord, usedLetters]);
+
+  const handleInput = useCallback(
+    (key: string) => {
+      if (gameOver) return;
+
+      if (key === "ENTER" && currentGuess.length === wordLengthOption.length) {
+        submitGuess();
+      } else if (key === "←" || key === "BACKSPACE") {
+        setCurrentGuess((prev) => prev.slice(0, -1));
+      } else if (
+        currentGuess.length < wordLengthOption.length &&
+        /^[A-Z]$/.test(key)
+      ) {
+        setCurrentGuess((prev) => (prev + key).toUpperCase());
+      }
+    },
+    [currentGuess, gameOver, wordLengthOption.length, submitGuess]
+  );
+
+  // Handle keyboard input
+  useEffect(() => {
+    const handleKeydown = (e: KeyboardEvent) => {
+      if (gameOver) return;
+      handleInput(e.key.toUpperCase());
+    };
+
+    window.addEventListener("keydown", handleKeydown);
+    return () => window.removeEventListener("keydown", handleKeydown);
+  }, [handleInput]);
 
   const getLetterColor = (letter: string, index: number, guess: string) => {
     if (!guess) return COLORS.empty;

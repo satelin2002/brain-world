@@ -392,3 +392,8 @@ export async function generatePuzzle(size: number = 5): Promise<PuzzleData> {
 
   throw new Error("Could not generate puzzle");
 }
+
+function generateClue(word: string): string {
+  // Add your clue generation logic here
+  return `Definition for ${word}`;
+}

@@ -29,14 +29,14 @@ function readJsonFile(filePath: string): string {
 function parseJsonContent(content: string): WordEntry[] {
   try {
     const data = JSON.parse(content);
-    const key = Object.keys(data)[0]; // Get the first key (e.g., 'two_letters', 'three_letters', etc.)
+    const key = Object.keys(data)[0];
     const words = data[key];
 
     if (!Array.isArray(words)) {
       throw new Error("Invalid JSON structure: words array not found");
     }
 
-    return words.map((entry: any) => {
+    return words.map((entry: { word: string; clues: string[] }) => {
       if (!entry.word || !Array.isArray(entry.clues)) {
         throw new Error("Invalid word entry structure");
       }

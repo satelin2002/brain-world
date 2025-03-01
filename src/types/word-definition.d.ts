@@ -1,11 +1,16 @@
 declare module "word-definition" {
-  interface WordDefinition {
-    getDef(
-      word: string,
-      lang: string,
-      options: any,
-      callback: (err: Error | null, def: { definition: string } | null) => void
-    ): void;
+  export interface WordDefinition {
+    word: string;
+    phonetic?: string;
+    meanings: {
+      partOfSpeech: string;
+      definitions: {
+        definition: string;
+        example?: string;
+        synonyms?: string[];
+        antonyms?: string[];
+      }[];
+    }[];
   }
 
   const wordDefinition: WordDefinition;

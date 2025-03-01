@@ -18,17 +18,6 @@ import {
   DialogTrigger,
   DialogFooter,
 } from "@/components/ui/dialog";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
 import { Input } from "@/components/ui/input";
 import { generatePuzzle } from "@/services/dictionary";
 import Header from "@/components/Header";
@@ -72,7 +61,7 @@ const PUZZLES = [
         },
         {
           number: 9,
-          clue: '"Hey, that\'s cheating!"',
+          clue: '"Hey, that&apos;s cheating!"',
           answer: "NOFAIR",
           row: 3,
           col: 0,
@@ -251,6 +240,8 @@ type SelectedClue = {
   clue: string;
   answer: string;
 };
+
+type GameState = "preview" | "recall" | "feedback" | "complete";
 
 // Define puzzle type
 type Puzzle = {
