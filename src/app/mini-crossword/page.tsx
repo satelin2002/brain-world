@@ -31,7 +31,6 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Input } from "@/components/ui/input";
 import { generatePuzzle } from "@/services/dictionary";
-import GoogleAd from "@/components/GoogleAd";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -501,13 +500,7 @@ export default function MiniCrosswordPage() {
       <main className="flex-1 w-full">
         <div className="w-full max-w-4xl mx-auto px-4 py-6 space-y-6">
           {/* Top Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-1"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white rounded-lg shadow-sm"
-            />
-          </div>
+          <div className="w-full">{/* GoogleAd component removed */}</div>
 
           {/* Navigation */}
           <div className="flex items-center justify-center gap-2 sm:gap-4">
@@ -707,23 +700,13 @@ export default function MiniCrosswordPage() {
             {/* Sidebar */}
             <div className="space-y-6">
               <div className="hidden lg:block sticky top-20">
-                <GoogleAd
-                  adSlot="YOUR-AD-SLOT-2"
-                  adFormat="vertical"
-                  className="bg-white/80 backdrop-blur rounded-xl shadow-xl shadow-black/5"
-                />
+                {/* GoogleAd component removed */}
               </div>
             </div>
           </div>
 
           {/* Bottom Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-4"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white rounded-lg shadow-sm"
-            />
-          </div>
+          <div className="w-full">{/* GoogleAd component removed */}</div>
         </div>
       </main>
       <Footer />

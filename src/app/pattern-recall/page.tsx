@@ -20,7 +20,6 @@ import { Separator } from "@/components/ui/separator";
 import { Trophy, Brain, Timer } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import GoogleAd from "@/components/GoogleAd";
 
 type GameState = "preview" | "recall" | "feedback" | "complete";
 
@@ -131,15 +130,6 @@ export default function PatternRecallPage() {
       <Header />
       <main className="flex-1 w-full">
         <div className="container max-w-4xl mx-auto px-4 py-6 space-y-6">
-          {/* Top Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-1"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white rounded-lg shadow-sm"
-            />
-          </div>
-
           {/* Game Header */}
           <div className="flex flex-col items-center space-y-4">
             <h1 className="text-4xl font-black tracking-tight">
@@ -335,25 +325,7 @@ export default function PatternRecallPage() {
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Sidebar Ad */}
-              <div className="hidden lg:block sticky top-20">
-                <GoogleAd
-                  adSlot="YOUR-AD-SLOT-2"
-                  adFormat="vertical"
-                  className="bg-white rounded-lg shadow-sm"
-                />
-              </div>
             </div>
-          </div>
-
-          {/* Bottom Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-4"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white rounded-lg shadow-sm"
-            />
           </div>
         </div>
       </main>

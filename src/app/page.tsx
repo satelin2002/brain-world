@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import GoogleAd from "@/components/GoogleAd";
 
 export default function HomePage() {
   return (
@@ -17,15 +16,6 @@ export default function HomePage() {
       <Header />
       <main className="flex-1 w-full">
         <div className="w-full max-w-4xl mx-auto px-4 py-6 space-y-6">
-          {/* Top Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-1"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white rounded-lg shadow-sm"
-            />
-          </div>
-
           <div className="text-center space-y-4">
             <h1 className="text-4xl font-black">Word Games</h1>
             <p className="text-xl text-muted-foreground">
@@ -85,15 +75,6 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             </Link>
-          </div>
-
-          {/* Bottom Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-4"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white rounded-lg shadow-sm"
-            />
           </div>
         </div>
       </main>

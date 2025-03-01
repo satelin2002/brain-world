@@ -21,7 +21,6 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { useEffect, useState } from "react";
 import words from "an-array-of-english-words";
-import GoogleAd from "@/components/GoogleAd";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -213,243 +212,189 @@ export default function WordlePage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 via-indigo-50 to-violet-50">
+    <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1 w-full">
-        <div className="w-full max-w-4xl mx-auto px-4 py-6 space-y-6">
-          {/* Top Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-1"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white/80 backdrop-blur rounded-xl shadow-xl shadow-black/5"
-            />
+        <div className="container max-w-4xl mx-auto px-4 py-6 space-y-6">
+          {/* Game Header */}
+          <div className="flex flex-col items-center space-y-4">
+            <h1 className="text-4xl font-black tracking-tight bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+              Wordle
+            </h1>
+            <p className="text-xl text-muted-foreground text-center max-w-[600px]">
+              Guess the hidden word
+            </p>
           </div>
 
-          {/* Navigation Buttons */}
-          <div className="flex items-center justify-center gap-2 sm:gap-4">
-            <Dialog>
-              <DialogTrigger asChild>
+          {/* Word Length Selector */}
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            {WORD_LENGTH_OPTIONS.map((option) => (
+              <Button
+                key={option.length}
+                onClick={() => handleModeChange(option)}
+                variant={wordLengthOption === option ? "default" : "outline"}
+                size="lg"
+                className={`rounded-full px-4 sm:px-6 ${
+                  wordLengthOption === option
+                    ? "bg-gradient-to-r from-blue-500 to-violet-500 text-white shadow-lg"
+                    : ""
+                }`}
+              >
+                {option.name}
+              </Button>
+            ))}
+          </div>
+
+          {/* Game Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6">
+            {/* Main Game Area */}
+            <div className="space-y-6">
+              {/* Game Grid */}
+              <div className="grid gap-2 mx-auto" style={{ maxWidth: "400px" }}>
+                {grid.map((row, rowIndex) => (
+                  <div key={rowIndex} className="flex justify-center gap-2">
+                    {row.map((letter, colIndex) => (
+                      <div
+                        key={colIndex}
+                        className={`w-12 h-12 border-2 flex items-center justify-center text-2xl font-black rounded-xl transition-all duration-500 transform hover:scale-105 ${
+                          rowIndex === guesses.length
+                            ? "border-gray-400 bg-white/50 backdrop-blur"
+                            : getLetterColor(
+                                letter,
+                                colIndex,
+                                guesses[rowIndex] || ""
+                              )
+                        }`}
+                      >
+                        {letter}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+
+              {/* Virtual Keyboard */}
+              <div className="space-y-2">
+                {KEYBOARD_ROWS.map((row, rowIndex) => (
+                  <div key={rowIndex} className="flex justify-center gap-1">
+                    {row.map((key) => (
+                      <button
+                        key={key}
+                        onClick={() => handleInput(key)}
+                        className={`px-0.5 sm:px-1 py-3 sm:py-4 text-sm sm:text-base md:text-lg rounded-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getKeyboardKeyColor(
+                          key
+                        )} ${
+                          key === "ENTER" || key === "←"
+                            ? "px-1.5 sm:px-2 md:px-4 min-w-[3rem] sm:min-w-[4rem] md:min-w-[4.5rem]"
+                            : "w-7 sm:w-8 md:w-10"
+                        }`}
+                      >
+                        {key}
+                      </button>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-6">
+              {/* Game Over Message */}
+              {gameOver && (
+                <div className="flex justify-center pt-2">
+                  <Button
+                    onClick={() => startNewGame(wordLengthOption)}
+                    variant="default"
+                    size="lg"
+                    className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg bg-gradient-to-br from-blue-500 to-violet-500 text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  >
+                    Play Again
+                  </Button>
+                </div>
+              )}
+
+              {/* Game Instructions */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="rounded-full px-4 sm:px-8 text-sm sm:text-base bg-white/80 backdrop-blur border-2 hover:bg-white/90 transition-all duration-300"
+                  >
+                    How to Play
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-md mx-4 bg-white/95 backdrop-blur">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-black">
+                      How to Play Wordle
+                    </DialogTitle>
+                  </DialogHeader>
+                  <div className="space-y-4 pt-4 text-sm text-muted-foreground">
+                    <p>
+                      Guess the word in 6 tries or less. Each guess must be a
+                      valid {wordLengthOption.length}-letter word.
+                    </p>
+                    <div className="space-y-2">
+                      <p className="font-bold">
+                        After each guess, the color of the tiles will change:
+                      </p>
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <div
+                            className={`w-10 h-10 ${COLORS.correct} flex items-center justify-center rounded font-bold`}
+                          >
+                            A
+                          </div>
+                          <span>Green: Letter is in the correct spot</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div
+                            className={`w-10 h-10 ${COLORS.present} flex items-center justify-center rounded font-bold`}
+                          >
+                            B
+                          </div>
+                          <span>
+                            Yellow: Letter is in the word but wrong spot
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div
+                            className={`w-10 h-10 ${COLORS.absent} flex items-center justify-center rounded font-bold`}
+                          >
+                            C
+                          </div>
+                          <span>Gray: Letter is not in the word</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <p className="font-bold">Controls:</p>
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>Type letters or use the on-screen keyboard</li>
+                        <li>Press Enter or click ENTER to submit your guess</li>
+                        <li>Press Backspace or ← to delete a letter</li>
+                      </ul>
+                    </div>
+                    <p>
+                      A new word is generated each time you play. Try to guess
+                      it in as few attempts as possible!
+                    </p>
+                  </div>
+                </DialogContent>
+              </Dialog>
+
+              {/* Back to Home Button */}
+              <Link href="/">
                 <Button
                   variant="outline"
                   size="lg"
                   className="rounded-full px-4 sm:px-8 text-sm sm:text-base bg-white/80 backdrop-blur border-2 hover:bg-white/90 transition-all duration-300"
                 >
-                  How to Play
+                  Back to Home
                 </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-md mx-4 bg-white/95 backdrop-blur">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-black">
-                    How to Play Wordle
-                  </DialogTitle>
-                </DialogHeader>
-                <div className="space-y-4 pt-4 text-sm text-muted-foreground">
-                  <p>
-                    Guess the word in 6 tries or less. Each guess must be a
-                    valid {wordLengthOption.length}-letter word.
-                  </p>
-                  <div className="space-y-2">
-                    <p className="font-bold">
-                      After each guess, the color of the tiles will change:
-                    </p>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <div
-                          className={`w-10 h-10 ${COLORS.correct} flex items-center justify-center rounded font-bold`}
-                        >
-                          A
-                        </div>
-                        <span>Green: Letter is in the correct spot</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div
-                          className={`w-10 h-10 ${COLORS.present} flex items-center justify-center rounded font-bold`}
-                        >
-                          B
-                        </div>
-                        <span>
-                          Yellow: Letter is in the word but wrong spot
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div
-                          className={`w-10 h-10 ${COLORS.absent} flex items-center justify-center rounded font-bold`}
-                        >
-                          C
-                        </div>
-                        <span>Gray: Letter is not in the word</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="font-bold">Controls:</p>
-                    <ul className="list-disc list-inside space-y-1">
-                      <li>Type letters or use the on-screen keyboard</li>
-                      <li>Press Enter or click ENTER to submit your guess</li>
-                      <li>Press Backspace or ← to delete a letter</li>
-                    </ul>
-                  </div>
-                  <p>
-                    A new word is generated each time you play. Try to guess it
-                    in as few attempts as possible!
-                  </p>
-                </div>
-              </DialogContent>
-            </Dialog>
-            <Link href="/">
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-full px-4 sm:px-8 text-sm sm:text-base bg-white/80 backdrop-blur border-2 hover:bg-white/90 transition-all duration-300"
-              >
-                Back to Home
-              </Button>
-            </Link>
-          </div>
-
-          {/* Main Game Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6">
-            <Card className="w-full bg-white/80 backdrop-blur border-2 shadow-xl shadow-black/5 rounded-xl">
-              <CardHeader className="space-y-4 sm:space-y-6 p-4 sm:p-6">
-                <div className="space-y-2 sm:space-y-3 text-center">
-                  <CardTitle className="text-2xl sm:text-3xl font-black bg-gradient-to-br from-blue-600 to-violet-600 text-transparent bg-clip-text">
-                    Wordle
-                  </CardTitle>
-                  <CardDescription className="text-base sm:text-lg text-gray-600">
-                    Try to guess the {wordLengthOption.length}-letter word in 6
-                    attempts or less
-                  </CardDescription>
-                </div>
-
-                {/* Word Length Selector */}
-                <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2">
-                  {WORD_LENGTH_OPTIONS.map((option) => (
-                    <Button
-                      key={option.length}
-                      variant={
-                        wordLengthOption.length === option.length
-                          ? "default"
-                          : "outline"
-                      }
-                      size="sm"
-                      className={`rounded-full text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-2 transition-all duration-300 ${
-                        wordLengthOption.length === option.length
-                          ? "bg-gradient-to-br from-blue-500 to-violet-500 text-white shadow-lg shadow-blue-500/30"
-                          : "bg-white/80 backdrop-blur hover:bg-white/90"
-                      }`}
-                      onClick={() => handleModeChange(option)}
-                    >
-                      {option.name}
-                    </Button>
-                  ))}
-                </div>
-
-                {message && (
-                  <div className="mt-2 p-3 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl border border-emerald-200 shadow-lg shadow-emerald-500/10">
-                    <p className="text-center font-bold text-emerald-600">
-                      {message}
-                    </p>
-                  </div>
-                )}
-              </CardHeader>
-
-              <CardContent className="space-y-6 sm:space-y-8 p-4 sm:p-6">
-                <div className="grid gap-2 sm:gap-3">
-                  {grid.map((row, rowIndex) => (
-                    <div
-                      key={rowIndex}
-                      className="flex justify-center gap-2 sm:gap-3"
-                    >
-                      {row.map((letter, colIndex) => (
-                        <div
-                          key={colIndex}
-                          className={`w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 border-2 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-black rounded-xl transition-all duration-500 transform hover:scale-105 ${
-                            rowIndex === guesses.length
-                              ? "border-gray-400 bg-white/50 backdrop-blur"
-                              : getLetterColor(
-                                  letter,
-                                  colIndex,
-                                  guesses[rowIndex] || ""
-                                )
-                          }`}
-                        >
-                          {letter}
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-
-                <Separator className="my-4 sm:my-6 bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-
-                {/* Virtual Keyboard */}
-                <div className="grid gap-1 sm:gap-2 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
-                  {KEYBOARD_ROWS.map((row, rowIndex) => (
-                    <div
-                      key={rowIndex}
-                      className="flex justify-center gap-1 sm:gap-1.5"
-                    >
-                      {row.map((key) => (
-                        <button
-                          key={key}
-                          onClick={() => handleInput(key)}
-                          className={`px-0.5 sm:px-1 py-3 sm:py-4 text-sm sm:text-base md:text-lg rounded-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getKeyboardKeyColor(
-                            key
-                          )} ${
-                            key === "ENTER" || key === "←"
-                              ? "px-1.5 sm:px-2 md:px-4 min-w-[3rem] sm:min-w-[4rem] md:min-w-[4.5rem]"
-                              : "w-7 sm:w-8 md:w-10"
-                          }`}
-                        >
-                          {key}
-                        </button>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-
-                {gameOver && (
-                  <div className="flex justify-center pt-2">
-                    <Button
-                      onClick={() => startNewGame(wordLengthOption)}
-                      variant="default"
-                      size="lg"
-                      className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg bg-gradient-to-br from-blue-500 to-violet-500 text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                    >
-                      Play Again
-                    </Button>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-
-            {/* Sidebar Ad */}
-            <div className="hidden lg:block sticky top-20">
-              <GoogleAd
-                adSlot="YOUR-AD-SLOT-2"
-                adFormat="vertical"
-                className="bg-white/80 backdrop-blur rounded-xl shadow-xl shadow-black/5"
-              />
+              </Link>
             </div>
-          </div>
-
-          {/* Middle Ad */}
-          <div className="lg:hidden w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-3"
-              adFormat="rectangle"
-              className="mx-auto max-w-[300px] bg-white/80 backdrop-blur rounded-xl shadow-xl shadow-black/5"
-            />
-          </div>
-
-          {/* Bottom Ad */}
-          <div className="w-full">
-            <GoogleAd
-              adSlot="YOUR-AD-SLOT-4"
-              adFormat="horizontal"
-              className="w-full min-h-[90px] md:min-h-[90px] bg-white/80 backdrop-blur rounded-xl shadow-xl shadow-black/5"
-            />
           </div>
         </div>
       </main>
