@@ -23,216 +23,6 @@ import { generatePuzzle } from "@/services/dictionary";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Define multiple puzzle data structures
-const PUZZLES = [
-  {
-    gridSize: 5,
-    blackCells: [
-      [0, 3],
-      [1, 1],
-      [3, 3],
-      [4, 1],
-    ],
-    clues: {
-      across: [
-        {
-          number: 1,
-          clue: 'Sing like "Boopity-bop-dee-doo-dee-doo-bee"',
-          answer: "SCAT",
-          row: 0,
-          col: 0,
-          length: 4,
-        },
-        {
-          number: 5,
-          clue: "Hawk's claw",
-          answer: "TALON",
-          row: 1,
-          col: 2,
-          length: 5,
-        },
-        {
-          number: 7,
-          clue: 'The "U" in U.K.',
-          answer: "UNION",
-          row: 2,
-          col: 0,
-          length: 5,
-        },
-        {
-          number: 9,
-          clue: '"Hey, that&apos;s cheating!"',
-          answer: "NOFAIR",
-          row: 3,
-          col: 0,
-          length: 6,
-        },
-        {
-          number: 10,
-          clue: 'Rapper with "Hot in Herre"',
-          answer: "NELLY",
-          row: 4,
-          col: 2,
-          length: 5,
-        },
-      ],
-      down: [
-        {
-          number: 1,
-          clue: "Surprise greatly",
-          answer: "STUN",
-          row: 0,
-          col: 0,
-          length: 4,
-        },
-        {
-          number: 2,
-          clue: "Officially accepted storylines",
-          answer: "CANON",
-          row: 0,
-          col: 1,
-          length: 5,
-        },
-        {
-          number: 3,
-          clue: '"Get ___!" ("Stop being so boring!")',
-          answer: "REAL",
-          row: 0,
-          col: 2,
-          length: 4,
-        },
-        {
-          number: 4,
-          clue: "Sum amount",
-          answer: "TOTAL",
-          row: 1,
-          col: 4,
-          length: 5,
-        },
-        {
-          number: 6,
-          clue: "Astronaut Armstrong",
-          answer: "NEIL",
-          row: 2,
-          col: 2,
-          length: 4,
-        },
-        {
-          number: 8,
-          clue: "Free of moisture",
-          answer: "DRY",
-          row: 3,
-          col: 0,
-          length: 3,
-        },
-      ],
-    },
-  },
-  {
-    gridSize: 5,
-    blackCells: [
-      [0, 4],
-      [1, 2],
-      [3, 2],
-      [4, 0],
-    ],
-    clues: {
-      across: [
-        {
-          number: 1,
-          clue: "Superhero's outfit",
-          answer: "CAPE",
-          row: 0,
-          col: 0,
-          length: 4,
-        },
-        {
-          number: 5,
-          clue: "Not digital",
-          answer: "ANALOG",
-          row: 1,
-          col: 0,
-          length: 6,
-        },
-        {
-          number: 7,
-          clue: "Morning moisture",
-          answer: "DEW",
-          row: 2,
-          col: 0,
-          length: 3,
-        },
-        {
-          number: 8,
-          clue: "Tiny amount",
-          answer: "DASH",
-          row: 3,
-          col: 0,
-          length: 4,
-        },
-        {
-          number: 10,
-          clue: "Finish line",
-          answer: "END",
-          row: 4,
-          col: 1,
-          length: 3,
-        },
-      ],
-      down: [
-        {
-          number: 1,
-          clue: "Coffee alternative",
-          answer: "CHAI",
-          row: 0,
-          col: 0,
-          length: 4,
-        },
-        {
-          number: 2,
-          clue: "Small battery",
-          answer: "AAA",
-          row: 0,
-          col: 1,
-          length: 3,
-        },
-        {
-          number: 3,
-          clue: "Opposite of night",
-          answer: "DAY",
-          row: 0,
-          col: 2,
-          length: 3,
-        },
-        {
-          number: 4,
-          clue: "Not sweet",
-          answer: "SOUR",
-          row: 0,
-          col: 3,
-          length: 4,
-        },
-        {
-          number: 6,
-          clue: "Computer brain",
-          answer: "CPU",
-          row: 1,
-          col: 1,
-          length: 3,
-        },
-        {
-          number: 9,
-          clue: "Small dog",
-          answer: "PUG",
-          row: 2,
-          col: 3,
-          length: 3,
-        },
-      ],
-    },
-  },
-];
-
 // Type for selected clue
 type SelectedClue = {
   type: "across" | "down";
@@ -240,8 +30,6 @@ type SelectedClue = {
   clue: string;
   answer: string;
 };
-
-type GameState = "preview" | "recall" | "feedback" | "complete";
 
 // Define puzzle type
 type Puzzle = {
@@ -269,7 +57,6 @@ type Puzzle = {
 
 export default function MiniCrosswordPage() {
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
-  const [loading, setLoading] = useState(true);
   const [grid, setGrid] = useState<string[][]>([]);
   const [hoveredClue, setHoveredClue] = useState<{
     type: "across" | "down";
@@ -287,7 +74,6 @@ export default function MiniCrosswordPage() {
 
   // Load a new puzzle
   const loadNewPuzzle = async () => {
-    setLoading(true);
     try {
       const newPuzzle = await generatePuzzle(5);
       console.log("Generated puzzle:", newPuzzle); // Add logging
@@ -302,8 +88,6 @@ export default function MiniCrosswordPage() {
       setHoveredClue(null);
     } catch (error) {
       console.error("Error generating puzzle:", error);
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -311,14 +95,6 @@ export default function MiniCrosswordPage() {
   useEffect(() => {
     loadNewPuzzle();
   }, []);
-
-  // Replace all puzzleData references with puzzle
-  const puzzleData = puzzle;
-
-  // Update resetGame to use loadNewPuzzle
-  const resetGame = () => {
-    loadNewPuzzle();
-  };
 
   // Check if a cell is black
   const isBlackCell = (row: number, col: number) => {
@@ -367,33 +143,6 @@ export default function MiniCrosswordPage() {
         col === clue.col && row >= clue.row && row < clue.row + clue.length
       );
     }
-  };
-
-  // Handle revealing an answer
-  const revealAnswer = (type: "across" | "down", number: number) => {
-    if (!puzzle) return;
-    const clue = puzzle.clues[type].find((c) => c.number === number);
-    if (!clue) return;
-
-    const newGrid = [...grid.map((row) => [...row])]; // Deep copy
-    const answer = clue.answer.split("");
-
-    if (type === "across") {
-      for (let i = 0; i < clue.length && clue.col + i < puzzle.gridSize; i++) {
-        if (!isBlackCell(clue.row, clue.col + i)) {
-          newGrid[clue.row][clue.col + i] = answer[i];
-        }
-      }
-    } else {
-      for (let i = 0; i < clue.length && clue.row + i < puzzle.gridSize; i++) {
-        if (!isBlackCell(clue.row + i, clue.col)) {
-          newGrid[clue.row + i][clue.col] = answer[i];
-        }
-      }
-    }
-
-    setGrid(newGrid);
-    setRevealedAnswers(new Set([...revealedAnswers, `${type}-${number}`]));
   };
 
   // Reveal all answers
@@ -677,7 +426,7 @@ export default function MiniCrosswordPage() {
                     Reveal All
                   </Button>
                   <Button
-                    onClick={resetGame}
+                    onClick={loadNewPuzzle}
                     variant="outline"
                     size="lg"
                     className="rounded-full px-6"

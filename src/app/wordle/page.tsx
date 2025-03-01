@@ -4,21 +4,12 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardDescription,
-} from "@/components/ui/card";
-import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Separator } from "@/components/ui/separator";
 import { useEffect, useState, useCallback } from "react";
 import words from "an-array-of-english-words";
 import Header from "@/components/Header";
@@ -169,7 +160,7 @@ export default function WordlePage() {
 
     window.addEventListener("keydown", handleKeydown);
     return () => window.removeEventListener("keydown", handleKeydown);
-  }, [handleInput]);
+  }, [handleInput, gameOver]);
 
   const getLetterColor = (letter: string, index: number, guess: string) => {
     if (!guess) return COLORS.empty;

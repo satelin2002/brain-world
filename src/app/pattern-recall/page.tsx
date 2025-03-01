@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -21,20 +21,20 @@ import { Trophy, Brain, Timer } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-type GameState = "preview" | "recall" | "feedback" | "complete";
-
 export default function PatternRecallPage() {
   const [gridSize, setGridSize] = useState(4);
   const [level, setLevel] = useState(1);
   const [pattern, setPattern] = useState<boolean[][]>([]);
   const [userPattern, setUserPattern] = useState<boolean[][]>([]);
-  const [gameState, setGameState] = useState<GameState>("preview");
+  const [gameState, setGameState] = useState<
+    "preview" | "recall" | "feedback" | "complete"
+  >("preview");
   const [score, setScore] = useState(0);
   const [timer, setTimer] = useState(0);
   const [highScore, setHighScore] = useState(0);
 
   // Initialize or reset the game
-  const initializeGame = () => {
+  const initializeGame = useCallback(() => {
     // Create empty grid
     const emptyGrid = Array(gridSize)
       .fill(null)
@@ -62,7 +62,7 @@ export default function PatternRecallPage() {
     setUserPattern(emptyGrid);
     setGameState("preview");
     setTimer(Math.max(5, 10 - Math.floor(level / 3))); // Decrease time as level increases
-  };
+  }, [gridSize, level]);
 
   // Handle timer
   useEffect(() => {

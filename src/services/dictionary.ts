@@ -177,11 +177,11 @@ class CrosswordGenerator {
   }
 
   private isValidIntersection(
-    word: string,
-    pos: number,
-    row: number,
-    col: number,
-    isAcross: boolean
+    _word: string,
+    _pos: number,
+    _row: number,
+    _col: number,
+    _isAcross: boolean
   ): boolean {
     // This is a simplified check - we're just making sure we don't create invalid letter combinations
     return true;
@@ -391,9 +391,4 @@ export async function generatePuzzle(size: number = 5): Promise<PuzzleData> {
   }
 
   throw new Error("Could not generate puzzle");
-}
-
-function generateClue(word: string): string {
-  // Add your clue generation logic here
-  return `Definition for ${word}`;
 }
